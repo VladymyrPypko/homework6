@@ -1,13 +1,13 @@
 html {
     font-size: 16px;
 }
-ul {
-    list-style: none;
-}
 body {
     padding-bottom: 40px;
     background: #faebd7 url(../images/travel-background.png) no-repeat center/cover;
     color: #fff;
+}
+ul {
+    list-style: none;
 }
 li {
     padding: 10px;
@@ -47,12 +47,12 @@ hr {
     margin-right: auto;
     font-size: 2rem;
 }
+.wrapper__item:not(:first-child):hover {
+    transform: translateY(-2px);
+}
 .wrapper__item:hover .wrapper__sublist {
     display: flex;
     flex-direction: column;
-}
-.wrapper__item:not(:first-child):hover {
-    transform: translateY(-2px);
 }
 .wrapper__sublist {
     position: absolute;
