@@ -5,20 +5,25 @@ ul {
     list-style: none;
 }
 body {
-    width: 100%;
     padding-bottom: 40px;
     background: #faebd7 url(../images/travel-background.png) no-repeat center/cover;
+    color: #fff;
 }
 li {
     padding: 10px;
 }
+hr {
+    width: 90%;
+    border: 1px solid #fff;
+    margin: 50px auto;
+}
 .wrapper {
     width: 80%;
     min-width: 600px;
+    min-height: 95vh;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    color: #fff;
 }
 .wrapper__nav {
     background: rgba(0, 0, 0, 0.4);
@@ -46,7 +51,7 @@ li {
     display: flex;
     flex-direction: column;
 }
-.wrapper__item:hover {
+.wrapper__item:not(:first-child):hover {
     transform: translateY(-2px);
 }
 .wrapper__sublist {
@@ -65,11 +70,9 @@ li {
     text-decoration: none;
     color: #fff;
 }
-/* section with content */
 .main {
     width: 80%;
     margin: 0 auto;
-    color: #fff;
 }
 .main__heading {
     text-align: center;
@@ -101,11 +104,6 @@ li {
 }
 .main__image:last-of-type {
     float: right;
-}
-hr {
-    width: 90%;
-    border: 1px solid #fff;
-    margin: 50px auto;
 }
 .main__info {
     margin: 25px 0;
