@@ -1,9 +1,14 @@
 html {
     font-size: 16px;
 }
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../fonts/Philosopher-Regular.ttf') format('ttf');
+}
 body {
     padding-bottom: 40px;
     background: #faebd7 url(../images/travel-background.png) no-repeat center/cover;
+    font-family: 'CustomFont';
     color: #fff;
 }
 ul {
@@ -66,6 +71,7 @@ hr {
     white-space: nowrap;
 }
 .wrapper__subitem a, .wrapper__heading--mod {
+    font-family: 'CustomFont';
     font-size: 1.2rem;
     text-decoration: none;
     color: #fff;
@@ -199,6 +205,7 @@ hr {
     outline: none;
 }
 .wrapper__form input::placeholder, .wrapper__form textarea::placeholder {
+    font-family: 'CustomFont';
     font-size: 1.1rem;
     color: #000
 }
