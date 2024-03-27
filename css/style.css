@@ -65,7 +65,7 @@ hr {
     border-bottom: 1px solid #fff;
     white-space: nowrap;
 }
-.wrapper__subitem a {
+.wrapper__subitem a, .wrapper__heading--mod {
     font-size: 1.2rem;
     text-decoration: none;
     color: #fff;
@@ -141,9 +141,12 @@ hr {
     color: #232323;
     font-size: 1.5rem;
 }
-.on-top:hover {
+.on-top:hover, .wrapper__submit-btn:hover {
     background: #232323;
     color: #fff;
+}
+.order {
+    padding: 40px;
 }
 .order, .wrapper__form {
     display: flex;
@@ -151,11 +154,22 @@ hr {
     justify-content: center;
     align-items: center;
 }
+.wrapper__heading--spec {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: crimson;
+}
+.wrapper__heading {
+    font-size: 1.4rem;
+}
 .wrapper__form {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     padding: 40px;
     margin-top: 40px;
+}
+.wrapper__form hr {
+    margin: 10px;
 }
 .wrapper__input, .wrapper__commentary, .wrapper__submit {
     margin: 10px auto;
@@ -166,17 +180,15 @@ hr {
     padding: 5px;
     outline: none;
 }
+.wrapper__form input::placeholder, .wrapper__form textarea::placeholder {
+    font-size: 1.1rem;
+    color: #000
+}
 .wrapper__radio-container {
     display: flex;
     justify-content: space-around;
     column-gap: 15px;
-    padding: 15px;
-}
-.wrapper__form input::placeholder, .wrapper__form textarea::placeholder {
-    color: #000
-}
-.wrapper__form hr {
-    margin: 10px;
+    padding: 15px 15px 0 15px;
 }
 .wrapper__submit-btn {
     padding: 5px;
