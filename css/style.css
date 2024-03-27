@@ -154,12 +154,30 @@ hr {
     justify-content: center;
     align-items: center;
 }
+@keyframes slideinleft {
+    from {
+        transform: translateX(-600px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideinright {
+    from {
+        transform: translateX(600px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
 .wrapper__heading--spec {
+    animation: slideinright 2s;
     font-size: 2.2rem;
     font-weight: 600;
     color: crimson;
 }
 .wrapper__heading {
+    animation: slideinleft 2s;
     font-size: 1.4rem;
 }
 .wrapper__form {
