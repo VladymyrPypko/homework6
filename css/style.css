@@ -145,3 +145,39 @@ hr {
     background: #232323;
     color: #fff;
 }
+.order, .wrapper__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper__form {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 40px;
+}
+.wrapper__input, .wrapper__commentary, .wrapper__submit {
+    margin: 10px auto;
+    border: 2px solid #fff;
+    padding: 3px;
+}
+.wrapper__input input, .wrapper__form textarea {
+    padding: 5px;
+    outline: none;
+}
+.wrapper__radio-container {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 15px;
+    padding: 15px;
+}
+.wrapper__form input::placeholder, .wrapper__form textarea::placeholder {
+    color: #000
+}
+.wrapper__form hr {
+    margin: 10px;
+}
+.wrapper__submit-btn {
+    padding: 5px;
+}
