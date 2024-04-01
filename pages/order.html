@@ -10,32 +10,32 @@
 </head>
 <body>
     <div class="wrapper order">
-        <p class="wrapper__heading--spec">Ахтунг!</p>
-        <p class="wrapper__heading">Пожалуйста, указывайте максимально точную информацию при заполнении, чтобы мы могли подобрать для вас подходящий тур</p>
-        <form action="https://fom.in.ua/echo" method="POST" class="wrapper__form">
-            <div class="wrapper__input">
+        <p class="order__heading--spec">Ахтунг!</p>
+        <p class="order__heading">Пожалуйста, указывайте максимально точную информацию при заполнении, чтобы мы могли подобрать для вас подходящий тур</p>
+        <form action="https://fom.in.ua/echo" method="POST" class="order__form">
+            <div class="order__input">
                 <input type="email" name="user_email" placeholder="Ваша почта" autofocus="" required="">
             </div>
-            <div class="wrapper__input">
+            <div class="order__input">
                 <input type="text" name="user_fullname" placeholder="Ф.И.О" required="">
             </div>
-            <div class="wrapper__input">
+            <div class="order__input">
                 <input type="tel" name="user_tel" placeholder="Номер тел." pattern="\+38 \(\d{3}\) \d{3}-\d{2}-\d{2}" title="+38 (0**) ***-**-**">
             </div>
-            <div class="wrapper__input">
+            <div class="order__input">
                 <input type="text" name="country_or_city" placeholder="Город или Страна" title="Напишите город или страну, который(ую) хотите посетить." required="">
             </div>
             <hr>
-            <h2 class="wrapper__heading--mod">Выберите класс отеля или гостинницы:</h2>
-            <div class="wrapper__radio-container">
-                <div class="wrapper__radio">
+            <h2 class="order__heading--mod">Выберите класс отеля или гостинницы:</h2>
+            <div class="order__radio-container">
+                <div class="order__radio">
                     <input type="radio" name="2_stars" id="2-stars">
                     <label for="2-stars">
                         <i class='bx bx-star'></i>
                         <i class='bx bx-star'></i>
                     </label>
                 </div>
-                <div class="wrapper__radio">
+                <div class="order__radio">
                     <input type="radio" name="3_stars" id="3-stars">
                     <label for="3-stars">
                         <i class='bx bx-star'></i>
@@ -43,7 +43,7 @@
                         <i class='bx bx-star'></i>
                     </label>
                 </div>
-                <div class="wrapper__radio">
+                <div class="order__radio">
                     <input type="radio" name="4_stars" id="4-stars">
                     <label for="4-stars">
                         <i class='bx bx-star'></i>
@@ -52,7 +52,7 @@
                         <i class='bx bx-star'></i>
                     </label>
                 </div>
-                <div class="wrapper__radio">
+                <div class="order__radio">
                     <input type="radio" name="5_stars" id="5-stars">
                     <label for="5-stars">
                         <i class='bx bx-star'></i>
@@ -64,11 +64,11 @@
                 </div>
             </div>
             <hr>
-            <div class="wrapper__commentary">
+            <div class="order__commentary">
                 <textarea name="commentary" rows="8" cols="50" placeholder="Добавьте комментарий с предпочтениями. Например:'Активный отдых. Отель в центре города или недалеко от метро. Персональный гид и т.д'"></textarea>
             </div>
-            <div class="wrapper__submit">
-                <button class="wrapper__submit-btn" type="submit">Отправить</button>
+            <div class="order__submit">
+                <button class="order__submit-btn" type="submit">Отправить</button>
             </div>
         </form>
     </div>

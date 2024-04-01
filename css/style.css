@@ -8,7 +8,7 @@ html {
 body {
     padding-bottom: 40px;
     background: #faebd7 url(../images/travel-background.png) no-repeat center/cover;
-    font-family: 'CustomFont';
+    font: 1rem 'CustomFont';
     color: #fff;
 }
 ul {
@@ -30,49 +30,52 @@ hr {
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
-.wrapper__nav {
+.nav {
     background: rgba(0, 0, 0, 0.4);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
-.wrapper__list {
+.nav__list {
     display: flex;
     align-items: center;
     justify-content: end;
-    cursor: default;
-    padding: 5px 25px;
+    padding: 5px 2%;
 }
-.wrapper__item {
+.nav__item {
     position: relative;
     display: inline-block;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font: 500 1.4rem 'CustomFont';
     white-space: nowrap;
+    cursor: pointer;
 }
-.wrapper__item:first-child {
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+}
+.nav__item:first-child {
     margin-right: auto;
     font-size: 2rem;
 }
-.wrapper__item:not(:first-child):hover {
+.nav__item:not(:first-child):hover {
     transform: translateY(-2px);
 }
-.wrapper__item:hover .wrapper__sublist {
+.nav__item:hover .nav__sublist {
     display: flex;
     flex-direction: column;
 }
-.wrapper__sublist {
+.nav__sublist {
     position: absolute;
     top: 100%;
     left: -1px;
     display: none;
     background: rgba(0, 0, 0, 0.7);
 }
-.wrapper__sublist .wrapper__subitem {
+.nav__sublist .nav__subitem {
     border-bottom: 1px solid #fff;
     white-space: nowrap;
 }
-.wrapper__subitem a, .wrapper__heading--mod {
-    font-family: 'CustomFont';
-    font-size: 1.2rem;
+.nav__subitem a,
+.order__heading--mod {
+    font: 1.2rem 'CustomFont';
     text-decoration: none;
     color: #fff;
 }
@@ -82,15 +85,14 @@ hr {
 }
 .main__heading {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 550;
+    font: 550 2.5rem 'CustomFont';
     margin: 120px 0;
 }
 .main__item {
     font-size: 1.3rem;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px 25px;
-    padding: 15px 40px;
+    padding: 15px 4%;
 }
 .main__item::after {
     content: "";
@@ -98,15 +100,14 @@ hr {
     display: table;
 }
 .main__heading--spec {
-    font-size: 1.7rem;
     margin: 15px;
-    font-weight: 550;
+    font: 550 1.7rem 'CustomFont';
 }
 .main__image {
-    width: 30%;
     float: inline-start;
-    border: 1px solid #fff;
+    width: 30%;
     margin: 25px;
+    border: 1px solid #fff;
 }
 .main__image:last-of-type {
     float: right;
@@ -123,8 +124,7 @@ hr {
     padding: 15px 0;
     text-align: center;
     background: #232323;
-    line-height: 20px;
-    font-size: 0.9rem;
+    font: 0.9rem/20px 'CustomFont';
 }
 .footer__row {
     margin: 5px 0;
@@ -143,18 +143,20 @@ hr {
     border: 2px solid #232323;
     border-radius: 5px;
     text-decoration: none;
-    padding: 5px 15px;
-    color: #232323;
+    padding: 5px 1%;
     font-size: 1.5rem;
+    color: #232323;
 }
-.on-top:hover, .wrapper__submit-btn:hover {
+.on-top:hover,
+.order__submit-btn:hover {
     background: #232323;
     color: #fff;
 }
 .order {
     padding: 40px;
 }
-.order, .wrapper__form {
+.order,
+.order__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,45 +178,47 @@ hr {
         transform: translateX(0);
     }
 }
-.wrapper__heading--spec {
+.order__heading--spec {
     animation: slideinright 2s;
-    font-size: 2.2rem;
-    font-weight: 600;
+    font: 600 2.2rem 'CustomFont';
     color: crimson;
 }
-.wrapper__heading {
+.order__heading {
     animation: slideinleft 2s;
     font-size: 1.4rem;
 }
-.wrapper__form {
+.order__form {
     background: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     padding: 40px;
     margin-top: 40px;
 }
-.wrapper__form hr {
+.order__form hr {
     margin: 10px;
 }
-.wrapper__input, .wrapper__commentary, .wrapper__submit {
+.order__input,
+.order__commentary,
+.order__submit {
     margin: 10px auto;
-    border: 2px solid #fff;
     padding: 3px;
+    border: 2px solid #fff;
 }
-.wrapper__input input, .wrapper__form textarea {
+.order__input input,
+.order__form textarea {
     padding: 5px;
     outline: none;
 }
-.wrapper__form input::placeholder, .wrapper__form textarea::placeholder {
-    font-family: 'CustomFont';
-    font-size: 1.1rem;
-    color: #000
+.order__form input::placeholder,
+.order__form textarea::placeholder {
+    font: 1.1rem 'CustomFont';
+    color: #000;
 }
-.wrapper__radio-container {
+.order__radio-container {
     display: flex;
     justify-content: space-around;
     column-gap: 15px;
-    padding: 15px 15px 0 15px;
+    padding: 15px 5% 0 5%;
 }
-.wrapper__submit-btn {
+.order__submit-btn {
     padding: 5px;
 }
